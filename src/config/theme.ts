@@ -102,3 +102,37 @@ export const shadows = {
         elevation: 8,
     },
 };
+
+// Combined theme object
+export const theme = {
+    colors: {
+        ...colors,
+        // Add gray scale for easier access
+        gray: {
+            50: '#F9FAFB',
+            100: '#F3F4F6',
+            200: '#E5E7EB',
+            300: '#D1D5DB',
+            400: '#9CA3AF',
+            500: '#6B7280',
+            600: '#4B5563',
+            700: '#374151',
+            800: '#1F2937',
+            900: '#111827',
+        },
+        white: '#FFFFFF',
+        black: '#000000',
+        // Status light colors for backgrounds
+        successLight: '#D1FAE5',
+        errorLight: '#FEE2E2',
+        warningLight: '#FEF3C7',
+        infoLight: '#DBEAFE',
+    },
+    spacing,
+    typography: {
+        ...typography,
+        sizes: typography.fontSize, // Alias for easier access
+    },
+    borderRadius,
+    shadows,
+};
